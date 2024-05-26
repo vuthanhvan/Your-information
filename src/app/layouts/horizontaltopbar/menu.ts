@@ -14,14 +14,21 @@ export const MENU: MenuItem[] = [
             parentId: 2
         },
         {
-            icon: 'bx-task',
+            icon: 'bxs-user-detail',
             id: 3,
+            label: 'MENUITEMS.DASHBOARDS.LIST.INFOR',
+            link: '/dashboards/inforPublic',
+            parentId: 2
+        },
+        {
+            icon: 'bx-task',
+            id: 4,
             label: 'MENUITEMS.DASHBOARDS.LIST.SAAS',
             link: '/dashboards/saas',
             parentId: 2
         },
         {
-            id: 4,
+            id: 5,
             icon: 'bx-tone',
             label: 'MENUITEMS.DASHBOARDS.LIST.SETTING',
             link: '/dashboards/setting',

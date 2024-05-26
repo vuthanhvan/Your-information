@@ -51,11 +51,14 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
 
-    const email = this.f['email'].value; // Get the username from the form
+     const email = this.f['email'].value; // Get the username from the form
+    //const username = this.f['username'].value;
     const password = this.f['password'].value; // Get the password from the form
 
     // Login Api
-    this.store.dispatch(login({ email: email, password: password }));
+     this.store.dispatch(login({ email: email, password: password }));
+
+    //this.store.dispatch(login({ username: username, password: password }));
   }
 
   /**

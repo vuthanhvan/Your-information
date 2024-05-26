@@ -50,6 +50,8 @@ import { CustomerEffects } from './store/customer/customer.effects';
 import { MailEffects } from './store/Email/email.effects';
 import { WebpublicComponent } from './webpublic/webpublic.component';
 import { SharedModule } from './webpublic/shared/shared.module';
+import { InforYourComponent } from './infor-your/infor-your.component';
+import axios from 'axios';
 
 if (environment.defaultauth === 'firebase') {
   initFirebaseBackend(environment.firebaseConfig);
@@ -65,7 +67,8 @@ export function createTranslateLoader(http: HttpClient): any {
 @NgModule({
   declarations: [
     AppComponent,
-    WebpublicComponent
+    WebpublicComponent,
+    InforYourComponent
   ],
   imports: [
     BrowserModule,
@@ -109,7 +112,7 @@ export function createTranslateLoader(http: HttpClient): any {
       OrdersEffects,
       CustomerEffects,
       MailEffects,
-      SharedModule
+      SharedModule,
     ]),
   ],
   bootstrap: [AppComponent],

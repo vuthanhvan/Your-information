@@ -23,9 +23,13 @@ import { SaasComponent } from './saas/saas.component';
 
 import { CdkStepperModule } from '@angular/cdk/stepper';
 import { NgStepperModule } from 'angular-ng-stepper';
+import { InforPublicComponent } from './inforPublic/inforPublic.component';
+
+import {  NO_ERRORS_SCHEMA } from '@angular/core';
 
 @NgModule({
-  declarations: [DefaultComponent, SaasComponent, SettingComponent],
+  declarations: [DefaultComponent, SaasComponent, SettingComponent,InforPublicComponent],
+  schemas: [NO_ERRORS_SCHEMA],
   imports: [
     CommonModule,
     FormsModule,

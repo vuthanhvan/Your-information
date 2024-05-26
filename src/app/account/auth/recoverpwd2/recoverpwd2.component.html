@@ -84,14 +84,14 @@
                                     </div>
                                     <form [formGroup]="resetForm" (ngSubmit)="onSubmit()">
                                         <alert type="danger" *ngIf="error" [dismissible]="false">{{ error }}</alert>
-                                        <div class="mb-3">
+                                        <!-- <div class="mb-3">
                                             <label for="useremail">Email</label>
                                             <input type="email" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" class="form-control" id="useremail" placeholder="Enter email">
                                             <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
                                                 <div *ngIf="f.email.errors.required">Email is required</div>
                                                 <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                         <div class="text-end">
                                             <button class="btn btn-primary w-md" type="submit">Reset</button>

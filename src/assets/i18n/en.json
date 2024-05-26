@@ -75,6 +75,7 @@
       "LIST": {
         "DEFAULT": "Dashboards",
         "SAAS": "Analytics",
+        "INFOR": "InforPublic",
         "SETTING": "Settings"
       }
     },

@@ -87,20 +87,20 @@
 
                                     <div class="mb-3">
                                         <label for="username">Username</label>
-                                        <input type="text" formControlName="username" class="form-control" id="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" placeholder="Enter username">
+                                        <input type="text" formControlName="username" class="form-control" id="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" placeholder="Username">
                                         <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
                                             <div *ngIf="f.username.errors.required">Userame is required</div>
                                         </div>
                                     </div>
 
-                                    <div class="mb-3">
+                                    <!-- <div class="mb-3">
                                         <label for="useremail">Email</label>
                                         <input type="email" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" class="form-control" id="useremail" placeholder="Enter email">
                                         <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
                                             <div *ngIf="f.email.errors.required">Email is required</div>
                                             <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="mb-3">
                                         <label for="userpassword">Password</label>
